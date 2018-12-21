@@ -43,3 +43,8 @@ class PostForm(forms.ModelForm):
 
         return new_slug
 
+
+
+
+
+

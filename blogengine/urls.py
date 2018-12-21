@@ -16,10 +16,12 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from django.conf.urls import include
+from django.urls import path
+from .views import redirect_blog
 
-from .views import hello
 
 urlpatterns = [
+    path('', redirect_blog),
     url(r'^admin/', admin.site.urls),
     url(r'^blog/', include('blog.urls'))
 ]
